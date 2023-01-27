@@ -1,9 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Activities xmlns="http://tempuri.org/ExerciseTracker">
-	<Activity Id="1">
-		<TypeId>1</TypeId>
-		<Date>21/01/2023 4:53:40 PM</Date>
-		<Duration>01:05:05</Duration>
-		<Distance>12.80</Distance>
-	</Activity>
+  <Activity Id="1">
+    <TypeId>1</TypeId>
+    <Date>2023-01-27</Date>
+    <Duration>01:05:06</Duration>
+    <Distance>12.8</Distance>
+  </Activity>
+  <Activity Id="2">
+    <TypeId>2</TypeId>
+    <Date>2023-01-27</Date>
+    <Duration>00:05:06</Duration>
+    <Distance>0</Distance>
+  </Activity>
+  <Activity Id="3">
+    <TypeId>1</TypeId>
+    <Date>2023-01-27</Date>
+    <Distance>10.05</Distance>
+    <Duration>00:10:01</Duration>
+  </Activity>
 </Activities>

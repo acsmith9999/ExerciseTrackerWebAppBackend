@@ -33,7 +33,7 @@ namespace ExerciseTrackerWebAppBackend
         /// <returns>An XElement representing the object</returns>
         public XElement toXML(XNamespace ns)
         {
-            return new XElement(ns + "Person",
+            return new XElement(ns + "Activity",
                 new XAttribute("Id", ActivityId),
                 new XElement(ns + "TypeId", ActivityType.Id),
                 new XElement(ns + "Date", ActivityDate),
@@ -52,7 +52,7 @@ namespace ExerciseTrackerWebAppBackend
             var xmlActivityList = doc.Root.Elements();
             XNamespace ns = doc.Root.GetDefaultNamespace();
 
-            //get each of the person elements from the xml
+            //get each of the activity elements from the xml
             foreach (var xmlActivity in xmlActivityList)
             {
                 //get activity type

@@ -354,7 +354,7 @@
                         </p>
                         <p>
                             <label for="activityDate">Date</label>
-                            <input type="text" id="activityDate" name="activityDate">
+                            <input type="date" id="activityDate" name="activityDate">
                         </p>
                         <p>
                             <label for="duration">Duration</label>
@@ -447,7 +447,7 @@
                         wsParams = getActivityIdFromForm; // function reference
                         wsSuccessCallback = (response) => {
 
-                            // Get person data
+                            // Get activity data
                             let activity = JSON.parse(response.d);
 
                             // Display activity to output
@@ -498,7 +498,7 @@
                         wsParams = {};
                         wsSuccessCallback = (response) => {
 
-                            // Get person data
+                            // Get activity data
                             let activities = JSON.parse(response.d);
 
                             // Loop through each activity, display to output
@@ -536,7 +536,7 @@
                         wsSuccessCallback = (response) => {
 
                             // Get type data
-                            let types = JSON.parse(response.t);
+                            let types = JSON.parse(response.d);
 
                             // Loop through each type, display to output
                             let typeList = document.createElement("ul");
@@ -550,7 +550,7 @@
 
                             // Display raw and formatted output
                             outputFormatted.appendChild(typeList);
-                            output.innerHTML = JSON.stringify(JSON.parse(response.t), undefined, 2);
+                            output.innerHTML = JSON.stringify(JSON.parse(response.d), undefined, 2);
                         }
 
                         break;
@@ -765,8 +765,8 @@
 
                 return {
                     "activityId": activityForm.elements["activityId"].value,
-                    "activityTypeId": activityForm.elements["activityTypeId"].value,
-                    "activityDate": activityForm.elements["activityDate"].value,
+                    "typeId": activityForm.elements["activityTypeId"].value,
+                    "date": activityForm.elements["activityDate"].value,
                     "duration": activityForm.elements["duration"].value,
                     "distance": activityForm.elements["distance"].value
                 };
@@ -785,7 +785,7 @@
 
                 activityForm.elements["activityId"].value = activity.ActivityId;
                 activityForm.elements["activityTypeId"].value = activity.ActivityType.Id;
-                activityForm.elements["activityDate"].value = activity.Date;
+                activityForm.elements["activityDate"].date = activity.Date;
                 activityForm.elements["duration"].value = activity.Duration;
                 activityForm.elements["distance"].value = activity.Distance
 

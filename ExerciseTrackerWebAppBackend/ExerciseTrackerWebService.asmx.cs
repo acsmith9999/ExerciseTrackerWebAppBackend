@@ -156,7 +156,7 @@ namespace ExerciseTrackerWebAppBackend
                 }
 
 
-                //create activity object and save in xml ile
+                //create activity object and save in xml file
                 int activityId = Activity.AddActivity(type, date, duration, distance);
 
                 //response code 200=ok
