@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Activities xmlns="http://tempuri.org/ExerciseTracker">
+	<Activity Id="1">
+		<TypeId>1</TypeId>
+		<Date>21/01/2023 4:53:40 PM</Date>
+		<Duration>01:05:05</Duration>
+		<Distance>12.80</Distance>
+	</Activity>
+</Activities>

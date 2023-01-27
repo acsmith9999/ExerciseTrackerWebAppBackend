@@ -1,0 +1,131 @@
+﻿* {
+    box-sizing:border-box;
+}
+
+html, body {
+    margin:0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Trebuchet MS',Calibri,Arial,sans-serif;
+    /*background-color: match to style guide*/
+}
+
+.site-wrapper{
+    max-width: 800px;
+    margin: 1em auto;
+    padding: 1em;
+    border-radius: 10px;
+
+}
+
+.site-header {
+    margin: 1em 0em;
+    padding-bottom: 1.5em;
+    border-bottom: 1px solid black;
+}
+
+.header-logo{
+    max-width: 400px;
+    margin: 0 auto 1em;
+    text-align: center;
+}
+
+.output-area{
+
+}
+
+.main-nav ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 300px;
+}
+
+.main-nav li {
+    margin-bottom: 1em;
+}
+
+.main-nav ul li a {
+    display: block;
+    text-decoration: none;
+    font-size: 1.2em;
+    text-align: center;    
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 1em;
+}
+
+.activityType-list {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 300px;
+}
+
+    .activityType-list li {
+        border: 1px solid black;
+        border-radius: 5px;
+        margin: 1em;
+        padding: 1em;
+    }
+
+    .activityType-list .department-id {
+        font-weight: bold;
+        display: inline-block;
+    }
+
+.people-table{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    border: 1px solid black;
+}
+
+.people-table th,
+.people-table td{
+    padding: 0.5em 0.8em;
+}
+
+.people-table th{
+    background-color: #4791FF;
+    color: white;
+    font-weight: normal;
+    font-size: 1.1em;
+}
+.people-table td{
+    border-bottom: 1px solid black;
+    border-right: 1px dotted black;
+}
+
+.people-table td:last-child{
+    border-right: none;
+}
+.people-table tr:last-child td{
+    border-bottom: none;
+}
+
+.site-footer {
+    margin: 2em 0 1em;
+    padding-top: 1em;
+    border-top: 1px solid black;
+}
+
+.copyright {
+    font-size: 0.8em;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1{
+    margin: 0;
+    font-size: 2.5em;
+    text-transform:uppercase;
+    font-weight: normal;
+    text-align: center;
+}

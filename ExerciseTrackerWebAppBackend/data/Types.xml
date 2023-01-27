@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Types xmlns="http://tempuri.org/ExerciseTracker">
+	<Type Id="0">
+		<Name>General</Name>
+	</Type>
+	<Type Id="1">
+		<Name>Running</Name>
+	</Type>
+	<Type Id="2">
+		<Name>Walking</Name>
+	</Type>
+	<Type Id="3">
+		<Name>Swimming</Name>
+	</Type>
+	<Type Id="4">
+		<Name>Cycling</Name>
+	</Type>
+	<Type Id="5">
+		<Name>Yoga</Name>
+	</Type>
+</Types>
