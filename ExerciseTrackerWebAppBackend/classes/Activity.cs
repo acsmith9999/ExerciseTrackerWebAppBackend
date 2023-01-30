@@ -51,6 +51,7 @@ namespace ExerciseTrackerWebAppBackend
             XDocument doc = XDocument.Load(_xmlDataPath);
             var xmlActivityList = doc.Root.Elements();
             XNamespace ns = doc.Root.GetDefaultNamespace();
+            
 
             //get each of the activity elements from the xml
             foreach (var xmlActivity in xmlActivityList)
@@ -76,6 +77,16 @@ namespace ExerciseTrackerWebAppBackend
             return activityList;
         }
 
+        public static int TotalDistance()
+        {
+            //load the xml file using linq
+            XDocument doc = XDocument.Load(_xmlDataPath);
+            var xmlActivityList = doc.Root.Elements();
+            XNamespace ns = doc.Root.GetDefaultNamespace();
+
+            int sum = (from nd in doc.Descendants("Distance") select Int32.Parse(nd.Value)).Sum();
+            return sum;
+        }
         public static Activity GetActivity(int activityId)
         {
             //find matching activity and return

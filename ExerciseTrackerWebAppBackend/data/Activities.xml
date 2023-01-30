@@ -3,8 +3,8 @@
   <Activity Id="1">
     <TypeId>1</TypeId>
     <Date>2023-01-27</Date>
-    <Duration>01:05:06</Duration>
     <Distance>12.8</Distance>
+    <Duration>01:05:08</Duration>
   </Activity>
   <Activity Id="2">
     <TypeId>2</TypeId>
@@ -13,9 +13,9 @@
     <Distance>0</Distance>
   </Activity>
   <Activity Id="3">
-    <TypeId>1</TypeId>
+    <TypeId>4</TypeId>
     <Date>2023-01-27</Date>
-    <Distance>10.05</Distance>
-    <Duration>00:10:01</Duration>
+    <Distance>50</Distance>
+    <Duration>00:00:00</Duration>
   </Activity>
 </Activities>
